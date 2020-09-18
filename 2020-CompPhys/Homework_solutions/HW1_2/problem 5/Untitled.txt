@@ -1,0 +1,1 @@
+For 1<r<3, the single fixed point is stable so we know we will converge on one point.  For r=2, there is a seemingly monotonic approach to the fixed point, with "rapid" convergence.  For r=2.99, there are clear oscillations associated with convergence to the fixed point, and the convergence is clearly slower (the oscillations continue to persist up to n=50).  

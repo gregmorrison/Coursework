@@ -1,0 +1,1 @@
+Each method performs the G-S orthogonalization, then tests the output vectors to ensure the dot product is zero and the vector magnitudes are the same.  

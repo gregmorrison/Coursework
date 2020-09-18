@@ -1,0 +1,11 @@
+Problem 2 summary:
+
+(a) in problem2.cpp, we find that 2^29 is the largest int that can be represented.  2^30 returns a negative number.  
+
+(b)  in problem2.cpp, we find that 2^1023 is the largest double that can be represented.  2^1024 returns inf.
+
+(c)  in problem2.m, we find that 2^1023 is the largest int, it's Inf for 2^1024
+
+(d)  in problem2.m, we find the same for double, 2^1023 is a number, Inf is 2^1024
+
+(e)  in python, starting with 1.0 and multiplying with 2.0 returns a number for 2^1023, but inf for 2^1024.  However, there was no bound on the size of the number starting with x=1 and multiplying by 2.  By googling "python largest integer", I eventually found this official documentation (via stackoverflow.com) that explains there is not an upper bound on long ints in python:  https://docs.python.org/3/whatsnew/3.0.html#integers
