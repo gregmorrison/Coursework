@@ -23,13 +23,7 @@ def euler(X,t,tau,derivs,params):		#this defines the euler update.  Pretty easy 
 	return X+tau*deriv(X,t,params)		#the function definition matches rk4
 
 
-def positionVerlet(X,t,tau,derivs,params):
-	deriv=derivs(X,t,params)  #this computes dx/dt and 
-	X[0]=X[0]+dt*X[1]+dt*dt/2*deriv[1]  #compute the update for position
-	deriv2=derivs(X,t,params)
-	X[1]=X[0]+dt/2
-# we can define a verlet function if we want, but it can't match the rk4 method.  
-	
+
 
 
 
