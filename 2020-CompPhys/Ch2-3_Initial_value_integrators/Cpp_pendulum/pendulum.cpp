@@ -89,12 +89,12 @@ int main(){
 	
 	
 	
-	X[1]=theta+omega*dt+dt*dt*(-sin(theta));
+	X[1]=theta+omega*dt+dt*dt*(-sin(theta))/2;
 	X[2]=theta;
 	t=0;
 	std::ofstream outVerlet("verlet_cpp.txt");
-	outRK<<t<<","<<X[2]<<"\n";
-	outRK<<t+dt<<","<<X[1]<<"\n";
+	outVerlet<<t<<","<<X[2]<<"\n";
+	outVerlet<<t+dt<<","<<X[1]<<"\n";
 	for(int i=0;i<nstep;i++){
 		double xcurr=X[1];
 		X[1]=2*X[1]-X[2]+dt*dt*(-sin(X[1]));
