@@ -9,7 +9,7 @@ signal=200
 
 T=1
 dt=0.001
-noiseScale=1
+noiseScale=.01
 
 
 npoints=int(T/dt)

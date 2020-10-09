@@ -21,7 +21,8 @@ ylabel('X(f)')
 figure()
 
 plot(tvals,x)
-xlabel('t (units of dt)')
+xlabel('t (units of dt)')ls
+
 ylabel('x(t)')
 
 
