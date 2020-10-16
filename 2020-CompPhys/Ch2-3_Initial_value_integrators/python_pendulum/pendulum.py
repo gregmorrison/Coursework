@@ -55,7 +55,7 @@ X[1]=omega
 t=0
 for titer in range(int(niter)):
 	X=euler(X,t,dt,deriv,[])
-	eulerResult=np.append(eulerResult,[X[0]])  #store the value of theta we saw
+	eulerResult=np.append(eulerResult,[X[1]])  #store the value of theta we saw
 	t=t+dt
 	
 		
@@ -68,7 +68,7 @@ X[1]=omega
 t=0
 for titer in range(int(niter)):
 	X=rk4(X,t,dt,deriv,[])
-	rk4Result=np.append(rk4Result,[X[0]])  #store the value of theta we saw
+	rk4Result=np.append(rk4Result,[X[1]])  #store the value of theta we saw
 	t=t+dt
 
 	
@@ -82,7 +82,7 @@ for titer in range(int(niter)):
 	xcurr=X[0]									#current value of x
 	X[0]=2*X[0]-X[1]+dt*dt*(-np.sin(xcurr))		#update the value of the current x
 	X[1]=xcurr									#update the value of the old x
-	verletResult=np.append(verletResult,[X[0]])  			#store the value of theta we saw
+	verletResult=np.append(verletResult,[X[1]])  			#store the value of theta we saw
 	t=t+dt
 
 
